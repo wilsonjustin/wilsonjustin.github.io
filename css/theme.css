@@ -70,6 +70,7 @@ footer {
   z-index: 100;
   position: relative;
   flex: 1;
+  margin: 0 0 2em 0;
   padding: 2em 0;
   background: #0d1b26;
   color: #fff;
@@ -77,6 +78,16 @@ footer {
 }
 #footer td {
   border: 0;
+}
+/* If Width Larger than 768px */
+@media only screen and (min-width: 769px) {
+
+}
+/* If Width Smaller than 768px */
+@media only screen and (max-width: 768px) {
+  #footer .row .col {
+    flex-basis: unset !important;
+  }
 }
 .copyright {
   text-align: left;
@@ -115,6 +126,9 @@ body {
 }
 p {
   margin: 0.5em 0 !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem !important;
 }
 ul {
   margin-left: 2.5rem;
