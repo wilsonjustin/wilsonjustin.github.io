@@ -72,7 +72,6 @@ footer {
   flex: 1;
   margin: 0 0 2em 0;
   padding: 2em 0;
-  background: #0d1b26;
   color: #fff;
   text-align: center;
 }
@@ -111,12 +110,18 @@ html, body {
   padding: 0;
 }
 body {
-  background: #0d1b26 !important;
+  /*background: #0d1b26 !important;*/
+  /* http://colorzilla.com/gradient-editor/#104263+0,0a1721+100 */
+  background: #104263; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #104263 0%, #0a1721 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #104263 0%,#0a1721 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #104263 0%,#0a1721 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104263', endColorstr='#0a1721',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   color: #fff;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif !important;
   background-position: 50% 0;
   position: relative;
 }
@@ -304,6 +309,10 @@ article {
 }
 #breadcrumbs a:hover {
   color: #5298bc;
+}
+#breadcrumbs .container {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 
