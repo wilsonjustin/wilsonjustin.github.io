@@ -110,13 +110,7 @@ html, body {
   padding: 0;
 }
 body {
-  /*background: #0d1b26 !important;*/
-  /* http://colorzilla.com/gradient-editor/#104263+0,0a1721+100 */
-  background: #104263; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #104263 0%, #0a1721 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse cover, #104263 0%,#0a1721 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #104263 0%,#0a1721 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104263', endColorstr='#0a1721',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #0d1b26 !important;
   color: #fff;
   display: flex;
   flex: 0 0 auto;
