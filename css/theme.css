@@ -139,7 +139,6 @@ ol li {
   text-indent: 0.25em;
 }
 ul, ol, dl {
-  /*display: inline-block;*/
   margin-top: 0.2em;
   margin-bottom: 1.5em;
 }
@@ -165,6 +164,9 @@ ul ul {
 }
 a strong {
   color: #5298bc;
+}
+a:hover {
+  text-decoration: none;
 }
 hr {
   position: relative;
@@ -199,11 +201,25 @@ pre, code {
   height: 28px;
 }*/
 
+/* If Width Smaller than 480px */
+@media only screen and (max-width: 480px) {
+  .logo img {
+    display: block;
+  }
+}
+
+/* If Height Larger than 480px */
+@media only screen and (min-height: 480px) {
+
+}
 .logo {
     font-family: 'Yeseva One', cursive; 
     font-size: 2.4em;
 }
-
+.logo img {
+  max-width: 105px;
+  padding: 0 0.4em 0 0;
+}
 
 /* ------- Navigation Main ------- */
 .nav-item {
@@ -213,7 +229,7 @@ pre, code {
     color: #fff !important;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #5298bc !important;
+    color: #c9a848 !important;
 }
 
 /* ------- Navigation Footer ------- */
@@ -230,7 +246,7 @@ pre, code {
   color: #fff;
 }
 .nav-footer ul li a:hover {
-  color: #5298bc;
+  color: #c9a848;
 }
 /* ----- Table ----- */
 table {
@@ -303,10 +319,11 @@ article {
 }
 #breadcrumbs a:hover {
   color: #5298bc;
+  text-decoration: none;
 }
 #breadcrumbs .container {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 
